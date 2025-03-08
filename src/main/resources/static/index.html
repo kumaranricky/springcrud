@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Management</title>
+  </head>
+  <body>
+    <h2>Employee Management</h2>
+
+    <!-- ✅ CREATE Employee -->
+    <h3>Add Employee</h3>
+    <form method="post" action="http://localhost:8080/employee/add">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required /><br />
+      <label for="location">Location:</label>
+      <input type="text" name="location" required /><br />
+      <label for="id">ID:</label>
+      <input type="number" name="id" required /><br />
+      <input type="submit" value="Add Employee" />
+    </form>
+
+    <!-- ✅ READ All Employees -->
+    <h3>View All Employees</h3>
+    <form method="get" action="http://localhost:8080/employee/list">
+      <input type="submit" value="View Employees" />
+    </form>
+
+    <!-- ✅ READ Employee by ID -->
+    <h3>Fetch Employee</h3>
+    <form method="post" action="http://localhost:8080/employee/fetch">
+      <label for="id">Enter Employee ID:</label>
+      <input type="number" name="id" required />
+      <input type="submit" value="Fetch Employee" />
+    </form>
+
+    <!-- ✅ DELETE Employee -->
+    <h3>Delete Employee</h3>
+    <form method="post" action="http://localhost:8080/employee/delete">
+      <label for="id">Enter Employee ID:</label>
+      <input type="number" name="id" required />
+      <input type="submit" value="Delete Employee" />
+    </form>
+  </body>
+</html>
