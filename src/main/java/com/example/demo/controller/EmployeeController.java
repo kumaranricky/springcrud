@@ -9,7 +9,7 @@ import com.example.demo.entity.Employee;
 import com.example.demo.service.EmployeeService;
 
 @RestController
-@RequestMapping("/employee")  // Base path for all endpoints
+@RequestMapping("/employee") 
 public class EmployeeController {
     
     @Autowired
